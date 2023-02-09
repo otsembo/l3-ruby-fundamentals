@@ -42,6 +42,11 @@ puts temp.ceil
 # 4.0 Boolean
 # TODO: True / Truthy
 isTuesday = true
+is_tuesday? = true
+
+if is_tuesday?
+    puts "It is Tuesday"
+
 
 # TODO: False / Falsy
 isWednesday = false
@@ -53,21 +58,58 @@ puts :green
 
 # 6.0 Arrays
 # TODO: Create array natively
+scores = [10, 56, 32, 80, 65]
+pp scores
 
 # TODO: Create array using Array class
+ages = Array.new(10, 18)
+pp ages
 
 # 7.0 Hashes
 # TODO: Create Hash
+student = {
+    name: "Jeff",
+    age: 20,
+    email: "jeff@moringa.com"
+}
+
+student2 = {
+    :name => "Diana",
+    :age => 22,
+    :email => "diana@moringa.com"
+}
+
+student3 = {
+    "First-Last": "Ian Okumu",
+    :age => 19,
+    email: "ian@moringa.com"
+}
 
 # TODO: Create Hash using Hash class
+tm = Hash.new
+pp tm
 
 # 8.0 Methods
 # TODO: Method with enclosed params
+def sayHello(name)
+    puts "Hello, #{name}"
+end
+
+sayHello "John"
+sayHello("Billgates")
+
+def double(num)
+    num * 2
+end
+
+x = double(10)
+puts x
 
 # TODO: Method with open params
+def say_goodbye first_name, last_name
+    puts "Hello #{first_name} #{last_name}"
+end
 
-
-
-
+say_goodbye 'Jessica', 'Gichuru'
 
 
